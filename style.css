@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+    background-image: radial-gradient(#5da6ff,#ce3ffe);
+    padding: 40px 0;
+    font-family: sans-serif;
+}
+
+main{
+    height: 100%;
+}
+
+.grid{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-inline: auto;
+    border: 5px solid rgb(16, 219, 47);
+}
+
+.squire{
+    height: 100%;
+    width: 100%;
+    border:2px solid rgb(248, 255, 57);
+}
+
+.mole{
+    background-image:url('rat.png');
+    background-size: cover;
+}
+
+.score-card,.timer{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:480px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .grid{
+        width: 360px;
+        height: 360px;
+    }
+}
